@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="UTF-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="./font-awesome-4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/htmleaf-demo.css">
+<title>个人网站</title>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.eeyellow.Timeline.css" />
+<link rel="stylesheet" href="./css/bootstrap-float-label.css"/>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- 导航菜单 -->
+<nav class="navbar navbar-inverse navbar-fixed-top" id="nav1"> 
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand"  id="logo">
+                <img src="./img/logo.png" alt="logo" class="img-circle">
+            </a>
+            <h1 id="typeMsg" class="hidden-xs hidden-sm" style="color:#999; margin-left:100px; font-size:1.1em">
+                Welcome to my personal website
+            </h1>
+            <!-- 小屏幕导航 -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right" style="margin-top:0px">
+            <!-- 大屏幕导航 -->  
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                <li><a href="#projects"><span class="glyphicon glyphicon-tasks"></span> Projects</a></li>
+                <li><a href="#travel"><span class="glyphicon glyphicon-camera"></span> Travel</a></li>
+                <li><a href="#skills"><span class="glyphicon glyphicon-book"></span> Skills</a></li>
+                <li><a href="#about"><span class="glyphicon glyphicon-user"></span> About</a></li>
+                <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 轮播图 -->
+<div id="myCarousel" class="carousel slide">
+    <!-- 下面的三个小圆圈 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 图片的轮播 -->
+    <div class="carousel-inner">
+        <div class="item active" style="background:#999;">
+            <img src="./img/02.png" alt="" >
+            <div class="carousel-caption">
+                <h3>Study</h3>
+                <p>I'm a programmer and I'll do my best!</p>
+             </div>
+        </div>
+        <div class="item" style="background:#999;">
+            <img src="./img/01.png" alt="" >
+            <div class="carousel-caption">
+                <h3>Going Places.</h3>
+                <h4>I haven't been everywhere, but it's on my list</h4>
+            </div>
+        </div>
+        <div class="item" style="background:#999;">
+            <img src="./img/04.png" alt="">
+            <div class="carousel-caption">
+                <h3>Health</h3>
+                <p>health is certainly more valuable than money</p>
+                <p>ause it is by health that money is procured.</p>
+            </div>
+        </div>
+    </div>
+    <!-- 左右按钮 -->
+    <a href="#myCarousel" data-slide="prev" class="carousel-control left" >
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#myCarousel" data-slide="next" class="carousel-control right ">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>    
+</div>
+
+<!-- projects -->
+<div id="projects" style="height:300px;">
+    <h1 class="text-center">My Projects</h1>
+    <div id="content" class="row" > 
+        <article> 
+            <div class="post-format-content"> 
+                <div class="post-thumbnail"> 
+                    <img src="./img/object1.png" class="img-thumbnail attachment-thumbnail wp-post-image">
+                </div> 
+                <div class="content-wrap"> 
+                    <h1 class="entry-title">
+                        <a href="http://qinwq.dev.dxdc.net/php2/shouye/shouye.html" target="_blank" class="featured-image">基于mysql+php开发的订餐网站。<br><br>请点击查看详情</a>
+                    </h1> 
+                </div> 
+            </div> 
+        </article>
+        <article> 
+            <div class="post-format-content"> 
+                <div class="post-thumbnail"> 
+                    <img src="./img/object2.png" class="img-thumbnail attachment-thumbnail wp-post-image">
+                </div> 
+                <div class="content-wrap"> 
+                    <h1 class="entry-title">
+                        <a href="http://qinwq.dev.dxdc.net/bookstore/front/index.php" target="_blank" class="featured-image">基于php面相对象的MVC框架+mysql<br><br>请点击查看详情</a>
+                    </h1> 
+                </div> 
+            </div> 
+        </article>
+    </div>
+</div>
+
+<!-- skills -->
+<div class="htmleaf-container" id="skills">
+    <div class="demo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-sm-7 col-sm-offset-4 col-xs-8 col-xs-offset-2">
+                    <h1 class="text-center">Skills</h1>
+                    <!-- html -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="HTML" data-trigger="hover" data-content="HTML对于一个前端人员来说是至关重要也是最基本的技能之一。如果没有扎实的HTML的基础，是不能在WEB路上长久的发展。所以在平时学习的过程中，我特别注意HTML基础的学习。特别是HTML5的新功能，更是一步一个脚印。">
+                    <h3>HTML</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 83%;">
+                            <div class="progress-value">83%</div>
+                        </div>
+                    </div>
+                    <!-- css -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="CSS" data-trigger="hover" data-content="如果一个网页没有CSS，肯定不能算是真正的网页，用户也是不能够忍受那是界面的。但是随着框架的出现，很多CSS基础很差的人也能够写出漂亮的页面。但是我认为，能够写源生的CSS是非常重要的，这代表着我们能够有扎实的基础持续的学习在前端这条路上。框架的应用和修改，以及学习新的框架，CSS都是非常重要的。所以，不管框架有多丰富，我都不会放弃CSS的学习，这是前端的必备技能，尤为重要">
+                    <h3>CSS</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 80%;">
+                            <div class="progress-value">80%</div>
+                        </div>
+                    </div>
+                    <!-- js -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="JAVASCRIPT" data-trigger="hover" data-content="随着WEB的发展，js在网页上的运用也越来越多。各种炫酷的特效，以及基础的验证等都得靠Js来完成。而且伴随着node.js的出现，js已经可以熟练地运用在后台了。但是我觉得JS是一个水很深的语言，AO链、this指向、闭包、封装、面向(基于)对象、原型......都是需要熟练掌握的JS知识，学习JS注定是一条终生的路，我永远不会停止对JS的学习。JS水平是对前端水平很重要的一个参考标准。">
+                    <h3>JAVASCRIPT</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 60%;">
+                            <div class="progress-value">60%</div>
+                        </div>
+                    </div>
+                        <!-- jq -->
+                    <a class="skilltool" data-placement="auto left" href="#skills" data-toggle="popover" title="JQUERY" data-trigger="hover" data-content="jQuery是一个快速、简洁的JavaScript框架：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件等。这些优点是我学习JQ的理由，我相信JQ的掌握会对前端水平的提升有重要的贡献。加油，继续学习！">
+                    <h3>JQUERY</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 60%;">
+                            <div class="progress-value">60%</div>
+                        </div>
+                    </div>
+                        <!-- bootstrap -->
+                    <a class="skilltool" data-placement="auto left" href="#skills" data-toggle="popover" title="BOOTSTRAP" data-trigger="hover" data-content="BOOTSTRAP的学习是因为在一个项目的驱使下被迫学习的。响应式的布局，炫酷的效果，以及现在前端行业中个应用Bootstrap的火爆，都是我学习这个的理由。当然，对于前端来说，熟练的掌握一个框架也是非常重要的。">
+                    <h3>BOOTSTRAP</h3>
+                    </a>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 85%;">
+                                <div class="progress-value">85%</div>
+                            </div>
+                        </div>
+                    <!-- photoshop -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="PHOTOSHOP" data-trigger="hover" data-content="平时的网页搭建中，因为不太会使用PS导致我很大部分时间都在百度如何修图，着实浪费了我许多时间。而且在未来的公司中，不一定会有专门的UI，所以我觉得PS真的是非常重要的一项技能对于前端。所以，在接下来的时间里，我会花专门的时间来系统的学习PS，至少基础的修图技能要掌握的很熟练。加油，期待我在PS上的蜕变。">
+                    <h3>PHOTOSHOP</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 45%;">
+                            <div class="progress-value">45%</div>
+                        </div>
+                    </div>
+                    <!-- php -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="PHP" data-trigger="hover" data-content="PHP行业现在的火爆程度有目共睹。我也是这股人流当中的一份子，PHP的优点太多了，多到我不得不学，不得不认真的学。前后不分家，不管是前端还是后台，学习PHP都是很有必要的。由于PHP的入门门槛比较低，所以PHP的初级开发者也比较多，所以我只要好好的学习，才能与他们产生差距。在接下来的路上，我会继续学习PHP，并全熟练地掌握一种框架！">
+                    <h3>PHP</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 85%;">
+                            <div class="progress-value">85%</div>
+                        </div>
+                    </div>
+                    <!-- mysql -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="MYSQL" data-trigger="hover" data-content="数据库的重要性相信是每一个程序员都很清楚地。所以在我觉得熟练的掌握至少一种数据库是非常重要的。数据库的基础，高级，优化都是很重要的部分，这也是我接下来要继续攻克的领域。">
+                    <h3>MYSQL</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 60%;">
+                            <div class="progress-value">70%</div>
+                        </div>
+                    </div>
+                    <!-- 其他 -->
+                    <a class="skilltool" data-placement=" auto left" href="#skills" data-toggle="popover" title="OTHERS" data-trigger="hover" data-content="在平时的学习当中，对AJAX，HTTP协议，XML等等都有一定的学习。但是我觉得WEB这快要学习的东西太多太多了，是一条永无止境的路。所以，无论我怎么学习，这部分我的进度永远都只会停留在这个地方。知识的更新与出现，我必须永不停止的学习。比如我现在对后台框架，对Oracle等大型数据库，以及微信相关的开发都是一无所知的，所以......唯有学习">
+                    <h3>OTHERS</h3>
+                    </a>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 20%;">
+                            <div class="progress-value">20%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- travel -->
+<div class="htmleaf-container" id="travel">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="VivaTimeline">
+                    <h1 class="text-center">Travel</h1>
+                        <dl>
+                            <dt>2014</dt>                                    
+                            <dd class="pos-left clearfix">
+                                <div class="circ"></div>
+                                <div class="time">August</div>
+                                <div class="events">
+                                    <div class="events-header">
+                                        <a class="skilltool" data-placement=" auto bottom"  data-toggle="popover" title="最接近天堂的地方" data-trigger="hover" data-content="高中毕业，不顾家里的反对，约上了朋友，偷偷摸摸的买了人生的第一张火车票。就这样在对拉萨一无所知的情况下踏上了这趟火车。一路上的所见所闻，都成为了我现在奈以回味的珍宝。如果再来一次，我还是会选择偷偷的踏上火车，去到那个我向往已久的净土！">
+                                        <h3>西藏</h3>
+                                        </a> 
+                                    </div>                               
+                                    <div class="events-body">                                      
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/lasa1.png" />                                            
+                                            </div>
+                                            <div class="events-desc">
+                                                拉萨的艳阳天和阴天就是一种随机切换的模式。那个在布达拉广场的下午，我就遇见了这两种截然不同的天空。拉萨的天空真的好低好低踮起脚尖就能碰到似的。晴天的拉萨天空更是蓝得真的不像话。雄壮的布达拉宫殿更是让人心生畏敬。这样的<b>布达拉宫殿</b>坐落在这样美丽的拉萨，无不陶醉着前往的旅客，这其中之一就有我！拉萨，有生之年还会再去的地方！
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/lasa2.png" />                                            
+                                            </div>
+                                            <div class="events-desc">
+                                                拉萨的艳阳天和阴天就是一种随机切换的模式。那个在布达拉广场的下午，我就遇见了这两种截然不同的天空。拉萨的天空真的好低好低踮起脚尖就能碰到似的。晴天的拉萨天空更是蓝得真的不像话。雄壮的布达拉宫殿更是让人心生畏敬。这样的<b>布达拉宫殿</b>坐落在这样美丽的拉萨，无不陶醉着前往的旅客，这其中之一就有我！拉萨，有生之年还会再去的地方！
+                                            </div>
+                                        </div>       
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/lasa3.png" />                                            
+                                            </div>
+                                            <div class="events-desc">
+                                                这是一张隔着车窗用自己的烂手机拍的<b>青藏高原日出</b>照片！当眼前的这幕出现时，火车上本带着朦胧睡眼的所有人都燥热了起来。都在感叹、都在拍照。我不知道用什么词语来形容这日出，所有的字眼都显得比较苍白无力，只能说这是我看过的最美的日出！越美的东西越容易逝去，当我还没缓过神来，日出就结束了。短短的几分钟，却让我回味终生！
+                                            </div>
+                                        </div>  
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/lasa4.png" />                                            
+                                            </div>
+                                            <div class="events-desc">
+                                                相比较于纳木错、羊卓雍湖等西藏著名的风景湖而言，<b>措木及日(冰湖)</b>显得就不那么被人所熟知了！但是，在我眼中，冰壶一点也不逊色于其它湖。已经精疲力尽视觉疲劳的我，爬到了山顶，本不对这冰湖抱有任何幻想。可眼前的这幅风景，着实让我打了脸，让我惊叹不已！湖水湛蓝清澈,蓝天白云、雪山草地、花丛树木倒映水中，水雾升腾，如入仙境。
+                                            </div>
+                                        </div>                                    
+                                    </div>   
+                                    <div class="events-footer">
+                                        123
+                                    </div>                               
+                                </div>
+                            </dd>
+                            <dt>2015</dt>
+                            <dd class="pos-right clearfix">
+                                <div class="circ"></div>
+                                <div class="time">April 16</div>
+                                <div class="events">
+                                    <div class="events-header">
+                                        <a class="skilltool" data-placement=" auto bottom"  data-toggle="popover" title="沈从文笔下的边城" data-trigger="hover" data-content="上完课回到寝室已经晚上7点了，正准备换衣服时接到了一个朋友的电话，说去凤凰玩。当时脑子里的第一反应是懵逼的！可马上又想到，紧接着的两天是运动会，反正没参加。所以，赶紧收拾了衣物就往火车站跑。就这样，四个女生旷课开始凤凰的美好旅程！">
+                                        <h3>凤凰</h3>
+                                        </a> 
+                                    </div>                                
+                                    <div class="events-body">                                           
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/fh1.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                说到凤凰的旅程，我脑子里的第一幅图就是这碗<b>牛肉米粉</b>，真的超级好吃！坐了一晚的火车又坐了客车，终于到了凤凰。行李放到客栈后，我们四个女生早已饥肠辘辘。于是就在客栈旁边的一家米粉店匆匆坐了下来，米粉真的超级辣味道超级棒！所以，在离开凤凰的那天，和朋友又来到了这个在漓江旁边的米粉店，吃了这个！才依依不舍的对凤凰告别！
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/fh2.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                清晨，还在朦胧睡意的我们就被一阵阵吆喝声给吵醒了！走到阳台上，发现正是船夫们的吆喝。好美的一副画，早上九点<b>凤凰漓江</b>的游客就已经很多了，船只也越来越多，顺着漓江去看凤凰的风景！正所谓你坐在船上看风景，殊不知站在岸上的人正在看风景里的你！于是和朋友立刻起床洗漱好后，我们也去当了船上风景的一份子，不知道会不会有岸上的人正在看着自己！
+                                            </div>
+                                        </div>
+                                    </div>       
+                                    <div class="events-footer">
+                                        12
+                                    </div>                                                       
+                                </div>
+                            </dd>
+                            <dd class="pos-left clearfix">
+                                <div class="circ"></div>
+                                <div class="time">April 20</div>
+                                <div class="events">
+                                    <div class="events-header">
+                                        <a class="skilltool" data-placement=" auto bottom"  data-toggle="popover" title="现实版的“哈利路亚山”" data-trigger="hover" data-content="早就听闻阿凡达中的哈利路亚山取景于张家界，于是很早就想来看看！于是趁着运动会(其实运动会早已结束，就是不想说自己是旷课，别戳穿)，就来到了张家界。话说人真的好多，上山都还要排队放行！">
+                                        <h3>张家界</h3>
+                                        </a>
+                                    </div>                                
+                                    <div class="events-body">                                
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/zjj1.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                以前在动物园见过<b>猴子</b>，可是那猴子还是挺怕人的。再加上一直没去过野生动物园，所以张家界着实让我过了一把野生猴子园的瘾。有木有很可爱，树上还有很多很多的猴子，它们都不攻击人而且还可以给他们喂食哟！
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/zjj2.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                很早以前吧，听说过深林里的火车。<b>十里画廊</b>里面也有这种小火车(就是供懒人做的)。真的，有那种意境美！茂密树林丛中，一列小火车在前进着，想想就很美好！ps专门选了一截除了我就没人的路摆拍的，哈哈哈！
+                                            </div>
+                                        </div>
+                                    </div>       
+                                    <div class="events-footer">
+                                        12
+                                    </div>                                                       
+                                </div>
+                            </dd>
+                            <!-- see more -->
+                            <dt><a data-target="#content1" data-toggle="collapse">see more</a></dt>
+                            <div class="collapse" id="content1">
+                            <!-- 云南 -->
+                            <dd class="pos-right clearfix">
+                                <div class="circ"></div>
+                                <div class="time">April 16</div>
+                                <div class="events">
+                                    <div class="events-header">
+                                        <a class="skilltool" data-placement=" auto bottom"  data-toggle="popover" title="不如一路向西去大理" data-trigger="hover" data-content="‘是不是对生活不太满意，很久没笑过又不知为何。既然不快乐又不喜欢这里，不如一路向西去大理。’因为这首歌，朋友特别想去洱海！于是我也就只有'舍命陪君子'了(事实上我刚到云南手机就丢了，也算是去财免灾吧~呜呜)。">
+                                        <h3>云南</h3>
+                                        </a> 
+                                    </div>                                
+                                    <div class="events-body">                                           
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/yunan1.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                看见这个煞爽英姿的女子了吗？没错，就是我！跳得很高有木有！这是在<b>大理的城墙</b>上拍的照片，背后就是苍山了！相信大家都听过风花雪月吧(话说这种酒喝起来和我大重庆的山城啤酒也没什么区别)，上关风下关花苍山雪洱海月！相信还记得《还珠格格》里的小燕子他们逃到了大理的景象吧，现在的大理虽然商业化了很多，但是房屋城墙等建筑还是还是记忆中的样子！
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/yunnan2.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                <b>丽江</b>，艳遇的地方，各种各样的酒吧随处可见！和朋友逛了一圈丽江古城也有些累了，于是选择了一家装修很有特色的酒吧坐了进去，点了一首我喜欢的《玫瑰》。本想着丽江的酒吧也去了，可以是回去了。可是路上我们被一个声音给吸引住了，于是...虽然这个酒吧装修相对逊色一点，可是这个歌手唱得真的很棒。我和朋友一直听到他下班我们才走，还偷拍了一张。嘻嘻~
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/yunnan3.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                《心花怒放》这部电影让大家记住了<b>双廊，洱海</b>。"也许爱情就在洱海边，也许故事正在发生着"----然而我和朋友两个单身汪并没有遇上所谓大爱情。哈哈哈！言归正传，洱海真的很美。我很朋友去绕过两次洱海(太多；根本绕不完)。一次在大理骑自行车，一次在双廊骑的电动车！根本看不够洱海的美，这张照片就是在双廊洱海边住的客栈拍的，照片中的女孩太装了不忍直视！
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/yunnan4.png" />
+                                            </div>
+                                            <div class="events-desc">
+                                                这是在<b>昆明的民族村</b>里拍的。里面有特别多有特色的民族村，印象最深的就是傣族村里的大象了！第一次这么近距离接触大象，以前去动物园也只是远远地滚看，表示伐开心。这里的大象可算是多才多艺，会投篮会颠球..！对了，以前听说滇池污染挺严重，但是我俩这次去的时候，沿着滇池的公园逛了很久，没看到湖里有一片垃圾，绿藻也很少！这点还是很开心的！
+                                            </div>
+                                        </div>
+                                    </div>       
+                                    <div class="events-footer">
+                                        12
+                                    </div>                                                       
+                                </div>
+                            </dd>
+                            <dd class="pos-left clearfix">
+                                <div class="circ"></div>
+                                <div class="time">October</div>
+                                <div class="events">
+                                    <div class="events-header">
+                                        <a class="skilltool" data-placement=" auto bottom"  data-toggle="popover" title="九寨归来不看水" data-trigger="hover" data-content="秋天的九寨沟颜色很艳！不知从哪里看到的这句话，于是就一直在等待机会！于是，终于在10中旬的一个周末(嘻嘻，别戳穿，我的周末有点长)，和老哥就开始了兄妹二人的九寨沟之行">
+                                        <h3>九寨沟</h3>
+                                        </a>
+                                    </div>                                
+                                    <div class="events-body">                                                                                            
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/jzg1.png" />                                            
+                                            </div>
+                                            <div class="events-desc">
+                                                九寨沟的风景真的美得不想话！赤、橙、黄、绿、青、蓝、紫的梦幻组合,令人几乎不敢相信眼前的现实<b>五花海</b>对岸的次生阔叶树黄灿灿的,煞是耀眼,倒映在湛蓝的海子中简直就是一幅绝美的山水画。ps这是用烂手机拍的，所以真实的九寨沟有多美就不言而喻了。
+                                            </div>
+                                        </div>      
+                                        <div class="row">
+                                            <div class="col-md-6 pull-left">
+                                                <img class="events-object img-responsive img-rounded" src="img/jzg2.png" />                                            
+                                            </div>
+                                            <div class="events-desc">
+                                                如果你以为九寨沟的水都是静的那就打错特错了！九寨沟的瀑布极多，西游戏里的背景就是在九寨沟珍珠滩瀑布取景的等等。这张照片就是在<b>树正瀑布</b>前拍的！除了很壮观我也不知道怎么形容了！隔着屏幕都能感受到的那种壮观！!
+                                            </div>
+                                        </div>  
+                                                                          
+                                    </div>   
+                                    <div class="events-footer">
+                                        12
+                                    </div>                               
+                                </div>
+                            </dd>
+                            <dt>Over</dt>      
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- about -->
+<div id="about" style="background:#304055; height:auto;">   
+    <h1 class="text-center">About</h1>
+    <div class="row">
+        <div class="col-md-6  col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 ">
+            <ul class="nav nav-tabs" id="nav">
+                <li class="active"><a href="#me">Me</a></li>
+                <li><a href="#ids">ID</a></li>
+                <li><a href="#job">Job</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+            </ul>
+            <div class="tab-content" style="padding:10px;color:#a5a5ad">
+                    <!-- me -->
+                <div id="me" class="tab-pane active fade in">
+                    <p><span style="font-size:2em;">我</span>在还没上大学的时候，就抱着一种在大学我肯定要好好的玩好好的疯不枉我的青春的心态！所以在上了大学后，我就疯狂地玩，和初中高中一样反正不是让老师省心的学生。就这样，我大一大二(除去大二下册后半学期)的周末就经常是在麻将房、网吧、酒吧、KTV等等地方度过的。</p>
+                    <p><span style="font-size:2em;">但</span>是现在到了大二下册后半学期，我恍然发现自己浪费了本该奋斗的时间选择了一种逃避未来的懦夫的生活方式！所以，我开始学习，开始慢慢远离这些场所，开始为自己的未来打算！于此同时，我发现自己对网站开发很感兴趣，很享受代码在我手中发挥作用的感觉，这就和做饭一样，加工的过程是非常奇妙的！于是就跟着老师步伐的学习了一段时间后，发现自己在WEB开发中越陷越深，越来越爱!</p>
+                </div>
+                <!-- id -->
+                <div id="ids" class="tab-pane fade">
+                    <table>
+                        <tr>
+                            <td style="text-align:right">Name：</td>
+                            <td>秦万倩</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right">Sex：</td>
+                            <td>女</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right">Date of birth：</td>
+                            <td>1995-10-13</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right">Native Place：</td>
+                            <td>重庆</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right">School：</td>
+                            <td><a href="http://www.cqnu.edu.cn/" style="color:#a5a5ad" target="_blank">    重庆师范大学</a></td>
+                        </tr>
+                        <tr>
+                        <td style="text-align:right">Tel：</td>
+                            <td>18983425884</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:right">QQ：</td>
+                            <td>245013296</td>  
+                        </tr>
+                        <tr>
+                            <td style="text-align:right">Email：</td>
+                            <td>qqqian0819@gmail.com / 245013296@qq.com</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- job -->
+                <div id="job" class="tab-pane fade">
+                    目前大三就读于重庆师范大学计算机本科专业！<br>
+                    对未来的职业规划是web前端和php后台！对于就业城市没有限制！<br>
+                    如果你正在从事相关职业，并且愿意我和你成为伙伴，就请快联系我吧！
+                </div>
+                <!-- hobby -->
+                <div id="hobby" class="tab-pane fade">
+                    <span style="color:#ebe7e7">Travel：</span>专门做了个板块，就足以证明我的爱了。很多地方没去过    ，但都在我的计划里面。我的人生希望前半部分能有一定的积蓄，后半部分我希望自己一直在路上！<br><br>
+                    <span style="color:#ebe7e7">Cook：</span>以前挺讨厌做饭甚至不愿意去碰。但是上了大学，突然就喜欢上了在厨房里的那种感觉。在厨房里忙碌，将生的食物从自己手中变成美食(当然我现在的厨艺还见不得人)，是一件很有成就感的事情；特别是当看到别人将自己做得食物吃完了就特别满足，这种感觉很用代码实现功能做出项目是一样的。做饭就和敲代码一样，是需要用心去做的！<br><br>
+                    <span style="color:#ebe7e7">Others：</span>历史；打麻将；打游戏；乒乓球；音乐；台球...
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div>
+    <h1 class="text-center">Contact</h1>
+    <div class="htmleaf-container" id="contact">
+        <div class="form-container" >
+            <form class="well center-block" style="max-width: 35rem;" action="home.php" method="post" name="form1">
+                <legend class="text-center">If you want to know me more </legend>
+                <div class="form-group input-group">
+                    <span class="has-float-label">
+                        <input class="form-control" id="firstname" name="firstname" type="text" placeholder="Name"/>
+                        <label for="firstname">First</label>
+                    </span>
+                    <span class="has-float-label">
+                        <input class="form-control" id="lastname" name="lastname" type="text" placeholder="Surname"/>
+                        <label for="lastname">Last</label>
+                    </span>
+                </div>
+                <div class="form-group input-group">
+                    <span class="input-group-addon">@</span>
+                    <span class="has-float-label">
+                        <input class="form-control" id="email" name="email" type="email" placeholder="qqqian0819@gmail.com"/>
+                        <label for="email">Email</label>
+                    </span>
+                </div>
+                <div class="form-group has-float-label">
+                    <textarea name="text" id="mess" class="form-control" cols="60" rows="10" placeholder="Thank you for your message.I'll return you as soon as I can!"/></textarea>
+                    <label for="mess">Message</label>
+                </div>
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" value="1" name="admi" checked="checked" /> Subscribe to receive letter.
+                    </label>
+                </div>
+                <input class="btn btn-block btn-success" id="sub" type="submit" name="submit" onClick="return check(form1)" value="send">
+                <!-- icon 微博推特github -->
+                <div class="text-center" id="icon">
+                    <a href="http://www.weibo.com/u/3314342403/home" target="_blank" style="font-size:50px;" title    ="新浪微博" data-toggle="tooltip" data-placement="bottom auto" ><i class="fa fa-weibo"     aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;               
+                    <a href="https://twitter.com/qqqian0819" target="_blank"  style="font-size:50px;" title="推特"     data-toggle="tooltip" data-placement="bottom auto" ><i class="fa fa-twitter" aria-hidden="    true"></i></a>&nbsp;&nbsp;&nbsp;                
+                    <a href="https://github.com/qqqian0819" target="_blank"  style="font-size:50px;" title="github    " data-toggle="tooltip" data-placement="bottom auto" ><i class="fa fa-github" aria-hidden="    true"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div style="background:#304055;" id="list">
+    <h1 class="text-center">留言列表(<span style="color:red;font-size:1em;"><?php echo sizeof($list);?></span>)</h1>
+    <!-- 留言；列表 -->
+    <?php foreach ($list as $k=>$v){?>
+    <div class="text-center container" style="background:#eee;width:40em;height:10em;border-radius:1em;margin-bottom:1em;overflow:hidden;">
+        <div style="float:left;">访客: <span style="font-weight:bold"><?php echo $v['firstname'],$v['lastname'];?></span> Email: <?php echo $v['email'];?></div>
+        <div style="float:right;">第<span style="color:red"><?php echo sizeof($list)-$k;?></span>楼</div>
+        <div style="clear:both"></div>
+        <div style="float:left;text-indent:2em"><?php echo $v['message'];?></div>
+        <div style="float:right;color:red;padding-top:7em;"><?php echo date('Y-m-d H:i:s',$v['add_time']);?></div>
+    </div>
+    <?php } ?>
+</div>
+
+
+<!-- footer -->
+<div id="footer" style="background:#000;height:100px;"> 
+   <div class="text-center">
+        <a href="#" class="btn btn-default btn-lg "><span class="glyphicon glyphicon-arrow-up"></span></a>
+   </div>
+   <h4 class="text-center" style="color:#fff;padding-top:1%;">copyright@秦万倩</h4>
+</div>
+
+
+
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script>
+    //onload打字
+    window.onload = function(){
+    var type = Type.createNew();                       // 初始化一个type类
+    var typeMsg = document.getElementById('typeMsg');  // 取得一个html标签对象
+    type.tag = typeMsg;                                // 标签对象赋值
+    type.typing();                                     // 打字
+    };
+
+    // 打字类
+    var Type = {　　　　
+    createNew: function() {　　　　　　
+        var type = {};                 // 定义一个类
+
+        // 成员变量
+        // type.message   = "我是一个一<br>名红领巾"; // 将要打印出的文字
+        type.message   =typeMsg.innerHTML;
+        type.underline = '_';          // 下划线，显示在文字后面
+        type.indexs    = 0;            // 索引，记录已输出多少字符
+        type.tag       = null;         // 显示文字的html标签对象
+        type.timer     = null;         // 定时器
+        type.speed     = 200           // 定时器时间
+
+        // 成员方法　　
+        type.length    = function(){   // 获取打印的文字长度
+            return type.message.length;
+        };　　　
+        type.typing    = function(){                                                    // 打字
+            type.timer = setTimeout(function(){type.typing();}, type.speed);            // 设置定时器，递归调用自己方法
+            type.tag.innerHTML = type.message.substr(0, type.indexs) + type.underline;  // 标签对象显示文字
+            if (type.indexs == type.length()-1) { type.underline = ""; };               // 去掉下划线
+            if (type.indexs == type.length()) { clearTimeout(type.timer); };            // 去除定时器
+            type.indexs++;                                                              // 索引+1
+        };
+
+        return type;　　　　　　       // 返回一个类
+    }　　
+   };
+  
+    // 轮播图
+    $('#myCarousel').carousel({
+      interval:2000,//每2000毫秒播放一次
+      pause:'hover',//鼠标悬停停止播放移动继续播放
+      wrap:'true',//默认true(循环播放).false(只播放一次)
+    });
+
+    //标签页
+    $('#nav a').on('mouseover',function(e){
+        // 阻止默认行为
+        e.preventDefault();
+        $(this).tab('show');
+    });
+     //工具提示
+    $('#icon>a').tooltip();
+     // submit
+    document.getElementById('sub').onmouseover=function(){
+        this.style.background='#fff';
+        this.style.color="green";
+    }
+    document.getElementById('sub').onmouseout=function(){
+        this.style.background='#98dda3';
+        this.style.color="#494a5f";
+    }
+ 
+</script>
+
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+<script type="text/javascript">
+    // 时间轴
+    $(document).ready(function(){
+        $('.VivaTimeline').vivaTimeline({
+            carousel: true,
+            carouselTime: 3000
+        });
+    });
+
+    //提示框之skills
+     $('.skilltool').popover();
+     // 检测发布内容
+    function check(form){
+        if (form.mess.value=="") {
+            alert("亲，你还没有输入要给我的留言哩！");
+            form.mess.focus();
+            return false;
+        }
+        if(form.email.value!==""){
+            var str1=form.email.value;
+            var expression1=/^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+            var objexp1=new RegExp(expression1);
+            if(objexp1.test(str1)==!true){
+                alert("请输入正确的邮箱");
+                form.email.focus();
+                return false;
+            }
+        }
+    }
+</script>
+</html>
